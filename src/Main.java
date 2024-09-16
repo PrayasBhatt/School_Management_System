@@ -11,6 +11,7 @@ public class Main {
         ArrayList<Subject> subjects = new ArrayList<>();
         ArrayList<Bill> bills = new ArrayList<>();
 
+
         Classroom c1 = new Classroom(101, "Khumbila", 30, false, true, "Mohan Pradhan");
         Classroom c2 = new Classroom(102, "Lobuche", 30, false, true, "Aakash Chandra Giri");
         Classroom c3 = new Classroom(103, "Yala", 30, true, true, "Bishnu Pandey");
@@ -45,17 +46,17 @@ public class Main {
         System.out.println("Roll Number: " + student.getRollNo());
         System.out.println("Grade: " + student.getGrade());
         System.out.println("Section: " + student.getSection());
-        System.out.println("Classroom: " + student.getClassroom().getClassroomName());
+        System.out.println("Classroom: " + student.getClassroom().getClassroomId());
         System.out.println("Class Teacher: " + student.getClassroom().getClassTeacher());
         System.out.println("Subjects:");
-        printSubjectDetails(student.getSubjects());
+        printSubject(student.getSubjects());
         System.out.println("Bills:");
         printBillDetails(student.getBills());
-        System.out.println("Total Fees: " + student.calculateTotalFees());
+        System.out.println("Total Fees: " + student.Feess());
         System.out.println();
     }
 
-    private static void printSubjectDetails(ArrayList<Subject> subjects) {
+    private static void printSubject(ArrayList<Subject> subjects) {
         if (subjects.size() > 0) {
             System.out.println(subjects.get(0).getName() + " : " + subjects.get(0).getTeacher() );
         }
@@ -69,13 +70,13 @@ public class Main {
 
     private static void printBillDetails(ArrayList<Bill> bills) {
         if (bills.size() > 0) {
-            System.out.println("Amount: " + bills.get(0).getFees() + ", Date: " + bills.get(0).getDate());
+            System.out.println("Amount: " + bills.get(0).getFees() + " Date: " + bills.get(0).getDate());
         }
         if (bills.size() > 1) {
-            System.out.println("Amount: " + bills.get(1).getFees() + ", Date: " + bills.get(1).getDate());
+            System.out.println("Amount: " + bills.get(1).getFees() + " Date: " + bills.get(1).getDate());
         }
         if (bills.size() > 2) {
-            System.out.println("Amount: " + bills.get(2).getFees() + ", Date: " + bills.get(2).getDate());
+            System.out.println("Amount: " + bills.get(2).getFees() + " Date: " + bills.get(2).getDate());
         }
     }
 }

@@ -78,7 +78,7 @@ public class Student {
         this.bills = bills;
     }
 
-    public double calculateTotalFees() {
+    public double Feess() {
         double totalFees = 0;
         for (Bill bill : bills) {
             totalFees += bill.getFees();

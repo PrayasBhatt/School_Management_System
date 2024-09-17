@@ -21,7 +21,6 @@ public class Student {
         this.bills = bills;
     }
 
-    // Getters and setters
     public String getName() {
         return name;
     }

@@ -17,7 +17,6 @@ public class Subject {
         this.credit = credit;
     }
 
-    // Getters and setters
     public int getId() {
         return id;
     }

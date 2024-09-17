@@ -17,7 +17,6 @@ public class Classroom {
         this.classTeacher = classTeacher;
     }
 
-    // Getters and setters
     public int getClassroomId() {
         return classroomId;
     }

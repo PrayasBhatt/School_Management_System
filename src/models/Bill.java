@@ -11,7 +11,6 @@ public class Bill {
         this.date = date;
     }
 
-    // Getters and setters
     public double getFees() {
         return fees;
     }
